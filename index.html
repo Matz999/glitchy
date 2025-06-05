@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glitchy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Glitchy</h1>
+  <input type="file" id="upload" accept="image/*" />
+  <canvas id="canvas"></canvas>
+
+  <div id="buttons">
+    <button onclick="applyEffect('rgbShift')">RGB Shift</button>
+    <button onclick="applyEffect('pixelate')">Pixelate</button>
+        <button onclick="applyEffect('datamosh')">datamosh</button>
+
+    <button onclick="applyEffect('invert')">invert</button>
+    <button onclick="applyEffect('sliceDisplace')">Slice Displace</button>
+    <button onclick="applyEffect('scanLines')">Scan Lines</button>
+    <button onclick="applyEffect('noiseOverlay')">Noise Overlay</button>
+        <button onclick="applyEffect('colorBanding')">Color Banding</button>
+
+    <button id="download_button" onclick="downloadImage()">Download</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
